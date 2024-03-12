@@ -1,0 +1,41 @@
+<html>
+    <title>Site 2F</title>
+    <BODY>
+        <DIV>
+            <TABLE aling ="center" id="tabela">
+                <TR>
+                    <TD>
+                        <IMG id="imagem" SRC="imagens/acordado.jpg">
+                    </TD>
+                        </TR>
+                        <TR>
+                            <TD>
+                                <BUTTON id="botaoAc">ACORDAR</BUTTON>
+                                <BUTTON id="botaoDo">DORMIR</BUTTON>
+                            </TD>
+                        </TR>
+            </TABLE>
+        </DIV>
+    </BODY>
+</html>
+
+<style>
+    #tabela tr td{
+        text-align: center;
+    }
+</style>
+
+<script>
+    var botaoAc = document.querySelector("#botaoAc");
+    botaoAc.addEventListener("click", trocarAc);
+    function trocarAc(){
+        document.getElementById("imagem").src = "acordado.jpg"
+        piscar();
+    } 
+    var botaoDo = document.querySelector("#botaoDo");
+    botaoAc.addEventListener("click", trocarDo);
+    function trocarDo(){
+        document.getElementById("imagem").src = "dormindo.jpg"
+        
+    } 
+</script>
